@@ -5,10 +5,14 @@ export class LoudGreeter extends Greeter {
 
     constructor(greeting: string){
         super(greeting);
-        this.extra = "!!";
+        this.extra = "!";
     }
 
     addVolume(): void{
         this.extra += "!";
+    }
+
+    greet(name: string): string{
+        return `${this.greeting}, ${name}${this.extra}!`
     }
 }
