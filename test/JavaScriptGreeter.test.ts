@@ -22,6 +22,4 @@ describe("JavaScriptGreeter", () => {
         expect(jsGreeter3.greet("mate")).toEqual("console.log('G'day, mate!')");
     });
 
-
-
 })
